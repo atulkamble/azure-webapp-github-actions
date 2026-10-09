@@ -1,4 +1,4 @@
-# Azure Web App Deployment Using GitHub Actions — Complete DevOps Project
+# Azure Web App Deployment Using GitHub Actions — Azure DevOps Project
 
 Azure App Service | GitHub Actions | Python Flask | CI/CD | Azure CLI | GitHub OIDC
 
