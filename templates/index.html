@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Azure Cloud Dashboard</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}" />
+  </head>
+  <body>
+    <header class="navbar">
+      <div class="brand">☁ Cloud Dashboard</div>
+      <span class="pill">● Azure App Service</span>
+    </header>
+
+    <main class="container">
+      <section class="hero">
+        <span class="eyebrow">CLOUD DEVOPS PROJECT</span>
+        <h1>
+          Deploy Smarter.<br />
+          <span>Scale Faster.</span>
+        </h1>
+        <p>
+          A modern Python Flask application deployed to Microsoft Azure using
+          GitHub Actions CI/CD.
+        </p>
+        <div class="actions">
+          <a href="/health" class="button">Check Health ↗</a>
+          <a href="/api/info" class="button secondary">View API ↗</a>
+        </div>
+      </section>
+
+      <section class="stats">
+        <article class="card">
+          <div class="card-icon">☁</div>
+          <h3>Cloud Platform</h3>
+          <strong>Microsoft Azure</strong>
+          <p>Managed App Service hosting</p>
+        </article>
+
+        <article class="card">
+          <div class="card-icon">⚙</div>
+          <h3>CI/CD Pipeline</h3>
+          <strong>GitHub Actions</strong>
+          <p>Automated build and deployment</p>
+        </article>
+
+        <article class="card">
+          <div class="card-icon">🐍</div>
+          <h3>Backend</h3>
+          <strong>Python Flask</strong>
+          <p>REST API and web application</p>
+        </article>
+      </section>
+
+      <section class="status-panel">
+        <div>
+          <h2>Application Status</h2>
+          <p>Live health check from Flask API</p>
+        </div>
+        <div>
+          <span id="status" class="status">Checking...</span>
+          <p id="checked-at"></p>
+        </div>
+      </section>
+
+      <footer>
+        <p>Azure Cloud Dashboard · DevOps Project</p>
+        <p>Environment: {{ environment }}</p>
+      </footer>
+    </main>
+
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+  </body>
+</html>
